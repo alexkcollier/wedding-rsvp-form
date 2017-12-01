@@ -4,7 +4,8 @@
   "description": "Allow guests to rsvp to our wedding",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "deploy": "surge ./"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexkcollier/wedding-rsvp-form/issues"
   },
-  "homepage": "https://github.com/alexkcollier/wedding-rsvp-form#readme"
+  "homepage": "https://github.com/alexkcollier/wedding-rsvp-form#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
