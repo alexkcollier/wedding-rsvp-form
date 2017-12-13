@@ -4,24 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Laurie and Alex</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
 
   <style>
     * { font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif; font-weight: 400!important; }
-    a { margin: 2em 0.5em 0em 0.5em; }
+    a { margin: 2em 0.75em 0em 0.75em; }
+    img {margin: 0;}
     .content h2:not(:first-child) { margin-top: 0.333em; }
+    .hero-body { padding: 1em; }
     .subtitle { font-style: italic; }
     .is-italic { font-style: italic; }
-    .button:hover { border-color: rgb(34,57,34) }
+    .is-narrow { margin: auto 1em; }
+    .button { border-color: rgb(34, 57, 34); }
+    .button:hover {
+      /* background-color:rgba(34, 34, 34, 0.05); */
+      border-color: rgb(34, 57, 34);
+      -webkit-box-shadow: 0px 2px 18px 0px rgba(34, 57, 34, 0.3);
+      -moz-box-shadow:    0px 2px 18px 0px rgba(34, 57, 34, 0.3);
+      box-shadow:         0px 2px 18px 0px rgba(34, 57, 34, 0.3);
+      transition-duration: 200ms;
+    }
     .date {
       padding: 0 0.5em;
       border-left: 1px solid #666;
       border-right: 1px solid #666;
     }
-    .time { margin: 0.5em 0em 2em; }
+    .time { margin: 0.5em auto 0; }
   </style>
 </head>
 <body>
@@ -29,25 +40,45 @@
     <div class="hero-body has-text-centered">
       <div class="container">
         <img src="images/branch.png">
-        <h2 class="title is-size-6 is-uppercase">The honour of your presence is requested at the marriage of</h2>
+        <h2 class="title is-size-6 is-uppercase">You are cordially invited to the wedding of</h2>
         <h2 class="title is-size-1">Laurie</h2>
         <h2 class="subtitle is-size-4">Feldman</h2>
-        <h2 class="is-size-1">&amp;</h2>
-        <h2 class="title is-size-1">Alex</h2>
+        <h2 class="is-size-1" style="margin-bottom:24px;">&amp;</h2>
+        <h2 class="title is-size-1">Alexander</h2>
         <h2 class="subtitle is-size-4">Collier</h2>
-        <div class="is-size-5 is-italic">May</div>
-        <div class="is-size-2"><span class="date">12</span></div>
-        <div class="is-size-5 is-italic">2018</div>
-        <div class="time">[time]</div>
-        <h3>Venue</h3>
-        <address>
-          Cedarview Alliance Church<br>
-          2784 Cedarview Road
-        </address>
-        <h3 class="title is-size-6 is-uppercase">Reception to follow</h3>
+
+        <section style="margin: 2em;">
+          <div class="is-size-5 is-italic">May</div>
+          <div class="is-size-3"><span class="date">12</span></div>
+          <div class="is-size-5 is-italic">2018</div>
+        </section>
+        
+        <section class="columns is-centered">
+          <div class="column is-narrow">
+            <h4 class="is-uppercase">Ceremony</h4>
+            <address>
+              Cedarview Alliance Church<br>
+              2784 Cedarview Road<br>
+              Ottawa, Ontario
+            </address>
+            <div class="time">3:00 PM</div>
+          </div>
+          <div class="column is-narrow">
+            <h4 class="is-uppercase">Reception</h4>
+            <address>
+              Light refreshments will be served at<br>
+              795 Kilbirnie Drive<br>
+              Ottawa, Ontario
+            </address>
+            <div class="time">7:00 PM</div>
+          </div>
+        </section>
+        
+        <h3 class="title is-size-5 is-uppercase">Please RSVP by April 12, 2018.</h3>
+
         <h4 class="subtitle">
-          <a href="./rsvp.html" class="button">RSVP</a>
-          <a href="https://thankfulregistry.com/laurieandalex" class="button">Registry</a>
+          <a href="./rsvp.html" class="button" target="_blank">RSVP</a>
+          <a href="https://thankfulregistry.com/laurieandalex" class="button" target="_blank">Registry</a>
         </h4>
         <img src="images/branch.png" style="transform: rotate(180deg);">
       </div>
